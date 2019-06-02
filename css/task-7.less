@@ -1,0 +1,161 @@
+@color-blue:#29BDE0;
+@bgclor-gray:#F0F0F0;
+@color-yellow :#FBB435;
+@color-gray: #9A9A9A;
+@color-moonlight: #FDFFFF;
+@bgcolor-yellow :#FBB435;
+@border-color :#CBCBCB;
+
+body
+{
+	.letter-spacing;
+	background-color: @bgclor-gray;
+}
+
+header
+{
+	height: 50px;
+	width: 100%;
+	background-color: @color-blue;
+	.header-img
+	{
+		padding:8px 0 0 20px;
+	}
+}
+
+.border
+{
+	border: 1px #CBCBCB solid;
+	box-sizing: unset;
+}
+.margin
+{
+	margin: 20px 0;
+}
+.letter-spacing
+{
+	letter-spacing: 2px;
+}
+.width
+{
+	width: 500px;
+	max-width: 89%;
+	margin:  0 auto;
+	text-align: center;
+	
+}
+.last-game-wrap
+{
+	.border;
+	position: relative;
+	height: 75px;
+	line-height: 75px;
+	background-color: @color-moonlight;
+	.last-game
+	{
+		.width;
+		font-size: 20px;
+		
+		a
+		{
+			color: @color-gray;
+		}
+		a:hover
+		{
+			text-decoration: none;
+		}
+		
+	}
+	.arr
+	{
+		position: absolute;
+		right: 5px;
+		top:50%-26px;
+		transform: scale(0.65);
+	}
+}
+
+.game-wrap
+{
+	.border;
+	background-color: @color-moonlight;
+	.zg-game   //捉鬼游戏
+	{
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		font-size: 20px;
+		color: @color-yellow;
+		.zg-game-text
+		{
+			border-bottom: 1px @color-yellow solid;
+		}
+	}
+	
+	.choose-wrap  //版本选择
+	{
+		position: relative;
+		width: 100%;
+		background-color: @color-moonlight;
+		.arr-yellow
+		{
+			position: absolute;
+			right: 2px;
+			top: 175px;
+			transform: scale(0.7);
+		}
+		.choose
+		{
+			padding: 20px 0;
+		}
+		.choose-text
+		{
+			width: 80%;
+			padding: 27px 0;
+			margin: 0 auto;
+			background-color:@color-blue;
+			color: #ffffff;
+			font-size: 19px;
+		}
+		.now-play-text
+		{
+			font-size: 14px;
+			color:@color-gray;
+			margin-bottom: 0;
+		}
+		a
+		{
+			color: #ffffff;
+		}
+		a:hover
+		{
+			text-decoration: none;
+		}
+		.circle-group
+		{
+			display: flex;
+			justify-content: space-between;
+			width: 60px;
+			margin: 5px auto;
+			.circle
+			{
+				width: 10px;
+				height: 10px;
+				border-radius: 50px;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				background-color: #F0F0F0;
+			}
+			
+			.active-circle
+			{
+				background-color: @color-blue;
+			}
+		}
+	}
+}
+
+
+
+
+

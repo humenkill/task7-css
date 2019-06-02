@@ -1,0 +1,166 @@
+@color-blue:#29BDE0;
+@color-yellow :#FBB435;
+@box-color:#F5C97B;
+@box-number-color:#83B09A;
+@color-light: #ffffff;
+p
+{
+	margin: 0;
+}
+
+.max-width
+{
+	width: 75%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+//header
+header
+{
+	background-color: @color-blue;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	color: #ffffff;
+	font-size: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1030;
+	border-bottom: 1px solid #74d4eb;
+	.home-img
+	{
+		width: 30px;
+		height: 25px;
+	}
+	.info-img
+	{
+		width: 25px;
+		height: 25px;
+	}
+}
+
+//main
+main
+{
+	margin-top: 50px;
+	margin-bottom: 73px;
+	width: 100%;
+	.victory-wrap
+	{
+		background-color: @color-blue;
+		width: 100%;
+	}
+	.victory
+	{
+		margin: 0 auto;
+		width: 170px;
+		background: url("../img/victory.png") no-repeat center;
+		background-size: 170px auto;
+		height: 150px;
+		color: #ffffff;
+		text-align: center;
+		p
+		{
+			position: relative;
+			bottom: -88px;
+			font-size: 21px;
+		}
+	}
+	.main-yellow-text
+	{
+		.max-width;
+		color: #FFC865;
+		margin-bottom: 30px;
+		font-weight: bold;
+	}
+	.text-group
+	{
+		.max-width;
+		color: #ffffff;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		padding-bottom: 20px;
+		font-size: 14px;
+	}
+	
+	
+}
+.list-wrap
+{
+	width: 100%;
+	border-bottom: 1px solid #DDDDDD;
+}
+.list
+{
+	background: @color-light;
+	.max-width;
+	.list-text
+	{
+		color: #A6A6A6;
+		font-size: 14px;
+		//width: 225px;
+	}
+	.list-head
+	{
+		display: flex;
+		justify-content: space-between;
+		.bold
+		{
+			font-size: 16px;
+			color: #000000;
+		}
+		.gray
+		{
+			color: #D2D2D2;
+			font-size: 12px;
+		}
+	}
+	p
+	{
+		margin: 5px 0;
+	}
+}
+//footer
+footer
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(41,189,224, 0.4);
+	z-index: 1020;
+	.button-wrap
+	{
+		margin: 14px auto;
+		width: 88%;
+		height: 45px;
+		max-width:500px;
+		display: flex;
+		justify-content: space-between;
+		
+		button
+		{
+			color: #ffffff;
+			font-size: 19px;
+			border: 0;
+			border-radius: 8px;
+			width: 45%;
+			text-align: center;
+			display: block;
+			
+		}
+		.button-again
+		{
+			background-color: #F66F6F;
+		}
+		.button-share
+		{
+			background-color: #FBB435;
+		}
+	}
+}
